@@ -1,11 +1,11 @@
 /*
-Author:
-Date:
-File Name: 
+Author:Jack Stafford
+Date:8.29.23
+File Name: CSS
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,6 +17,11 @@ body {
 }
 
 /* Style rules for mobile viewport */
+
+article {
+  padding: 2%;
+}
+
 
 /* Style rule for header */
 header {
@@ -56,12 +61,17 @@ footer {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 650px), print {
-    
-    
+
+  .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+  }
+
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
 
-    
+
 }
